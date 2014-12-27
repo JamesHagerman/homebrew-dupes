@@ -14,6 +14,12 @@ class Screen < Formula
       url "https://gist.githubusercontent.com/yujinakayama/4608863/raw/75669072f227b82777df25f99ffd9657bd113847/gistfile1.diff"
       sha1 "93d611f1f46c7bbca5f9575304913bd1c38e183b"
     end
+    
+    # This patch is to enable 500kbps as a possible baud rate
+    patch :p3 do
+      url "https://gist.githubusercontent.com/JamesHagerman/a369606bc6cb34b6a433/raw/c3d3df5fe92a05373cc9f7cb9d1449fd6001894c/add500kbp.diff"
+      sha1 "1eaa56db738357ad8b4b6dc51e5230ae44713e18"
+    end
   end
 
   head do
